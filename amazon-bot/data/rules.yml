@@ -1,0 +1,63 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to store hours
+  steps:
+  - intent: ask_store_hours
+  - action: utter_store_hours
+
+- rule: Respond to home delivery inquiry
+  steps:
+  - intent: ask_home_delivery
+  - action: utter_home_delivery
+
+- rule: Respond to return product inquiry
+  steps:
+  - intent: ask_return_product
+  - action: utter_return_product
+
+- rule: Respond to refund policy inquiry
+  steps:
+  - intent: ask_refund_policy
+  - action: utter_refund_policy
+
+- rule: Respond to store locations inquiry
+  steps:
+  - intent: ask_store_locations
+  - action: utter_store_locations
+
+- rule: Respond to track order inquiry
+  steps:
+  - intent: ask_track_order
+  - action: utter_track_order
+
+- rule: Respond to loyalty program inquiry
+  steps:
+  - intent: ask_loyalty_program
+  - action: utter_loyalty_program
+
+- rule: Respond to modify order inquiry
+  steps:
+  - intent: ask_modify_order
+  - action: utter_modify_order
+
+- rule: Respond to payment methods inquiry
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_payment_methods
+
+- rule: Respond to warranty policy inquiry
+  steps:
+  - intent: ask_warranty_policy
+  - action: utter_warranty_policy
